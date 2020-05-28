@@ -17,6 +17,7 @@
 		D03633292480278600AAEE69 /* InstantiatableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03633282480278600AAEE69 /* InstantiatableExtension.swift */; };
 		D036332B248027A100AAEE69 /* NibLoadableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036332A248027A100AAEE69 /* NibLoadableViewExtension.swift */; };
 		D036332D248027C400AAEE69 /* ReusableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036332C248027C400AAEE69 /* ReusableViewExtension.swift */; };
+		D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D03633282480278600AAEE69 /* InstantiatableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiatableExtension.swift; sourceTree = "<group>"; };
 		D036332A248027A100AAEE69 /* NibLoadableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableViewExtension.swift; sourceTree = "<group>"; };
 		D036332C248027C400AAEE69 /* ReusableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewExtension.swift; sourceTree = "<group>"; };
+		D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				D03633282480278600AAEE69 /* InstantiatableExtension.swift */,
 				D036332A248027A100AAEE69 /* NibLoadableViewExtension.swift */,
 				D036332C248027C400AAEE69 /* ReusableViewExtension.swift */,
+				D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				D0363316248020E400AAEE69 /* ViewController.swift in Sources */,
 				D036332B248027A100AAEE69 /* NibLoadableViewExtension.swift in Sources */,
 				D036332D248027C400AAEE69 /* ReusableViewExtension.swift in Sources */,
+				D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */,
 				D0363312248020E400AAEE69 /* AppDelegate.swift in Sources */,
 				D03633272480272500AAEE69 /* ViewProtocols.swift in Sources */,
 				D0363314248020E400AAEE69 /* SceneDelegate.swift in Sources */,
