@@ -18,6 +18,8 @@
 		D036332B248027A100AAEE69 /* NibLoadableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036332A248027A100AAEE69 /* NibLoadableViewExtension.swift */; };
 		D036332D248027C400AAEE69 /* ReusableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036332C248027C400AAEE69 /* ReusableViewExtension.swift */; };
 		D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */; };
+		D03633342480293B00AAEE69 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03633332480293B00AAEE69 /* CollectionViewCell.xib */; };
+		D03633362480298D00AAEE69 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03633352480298D00AAEE69 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D036332A248027A100AAEE69 /* NibLoadableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableViewExtension.swift; sourceTree = "<group>"; };
 		D036332C248027C400AAEE69 /* ReusableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewExtension.swift; sourceTree = "<group>"; };
 		D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		D03633332480293B00AAEE69 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D03633352480298D00AAEE69 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				D0363313248020E400AAEE69 /* SceneDelegate.swift */,
 				D0363315248020E400AAEE69 /* ViewController.swift */,
 				D0363317248020E400AAEE69 /* Main.storyboard */,
+				D03633332480293B00AAEE69 /* CollectionViewCell.xib */,
+				D03633352480298D00AAEE69 /* CollectionViewCell.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 			files = (
 				D036331E248020ED00AAEE69 /* LaunchScreen.storyboard in Resources */,
 				D036331B248020ED00AAEE69 /* Assets.xcassets in Resources */,
+				D03633342480293B00AAEE69 /* CollectionViewCell.xib in Resources */,
 				D0363319248020E400AAEE69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +186,7 @@
 			files = (
 				D03633292480278600AAEE69 /* InstantiatableExtension.swift in Sources */,
 				D0363316248020E400AAEE69 /* ViewController.swift in Sources */,
+				D03633362480298D00AAEE69 /* CollectionViewCell.swift in Sources */,
 				D036332B248027A100AAEE69 /* NibLoadableViewExtension.swift in Sources */,
 				D036332D248027C400AAEE69 /* ReusableViewExtension.swift in Sources */,
 				D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */,
