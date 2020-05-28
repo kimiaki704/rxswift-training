@@ -7,5 +7,6 @@
 //
 
 import UIKit
+import RxSwift
 
 final class HelloRxSwiftViewController: UIViewController, Instantiatable {}
