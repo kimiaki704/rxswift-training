@@ -20,6 +20,8 @@
 		D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */; };
 		D03633342480293B00AAEE69 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03633332480293B00AAEE69 /* CollectionViewCell.xib */; };
 		D03633362480298D00AAEE69 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03633352480298D00AAEE69 /* CollectionViewCell.swift */; };
+		D036333A24802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D036333924802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard */; };
+		D036333C24802D9200AAEE69 /* HelloRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D0363331248028F900AAEE69 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		D03633332480293B00AAEE69 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		D03633352480298D00AAEE69 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D036333924802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelloRxSwiftViewController.storyboard; sourceTree = "<group>"; };
+		D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloRxSwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,13 +95,11 @@
 		D036332F248027F200AAEE69 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				D036333824802D7800AAEE69 /* HelloRxSwift */,
 				D03633302480284D00AAEE69 /* Resources */,
+				D036333724802D5300AAEE69 /* Home */,
 				D0363311248020E400AAEE69 /* AppDelegate.swift */,
 				D0363313248020E400AAEE69 /* SceneDelegate.swift */,
-				D0363315248020E400AAEE69 /* ViewController.swift */,
-				D0363317248020E400AAEE69 /* Main.storyboard */,
-				D03633332480293B00AAEE69 /* CollectionViewCell.xib */,
-				D03633352480298D00AAEE69 /* CollectionViewCell.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -110,6 +112,26 @@
 				D036331F248020ED00AAEE69 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D036333724802D5300AAEE69 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D0363315248020E400AAEE69 /* ViewController.swift */,
+				D0363317248020E400AAEE69 /* Main.storyboard */,
+				D03633332480293B00AAEE69 /* CollectionViewCell.xib */,
+				D03633352480298D00AAEE69 /* CollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D036333824802D7800AAEE69 /* HelloRxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D036333924802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard */,
+				D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */,
+			);
+			path = HelloRxSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +195,7 @@
 				D036331E248020ED00AAEE69 /* LaunchScreen.storyboard in Resources */,
 				D036331B248020ED00AAEE69 /* Assets.xcassets in Resources */,
 				D03633342480293B00AAEE69 /* CollectionViewCell.xib in Resources */,
+				D036333A24802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard in Resources */,
 				D0363319248020E400AAEE69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +215,7 @@
 				D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */,
 				D0363312248020E400AAEE69 /* AppDelegate.swift in Sources */,
 				D03633272480272500AAEE69 /* ViewProtocols.swift in Sources */,
+				D036333C24802D9200AAEE69 /* HelloRxSwiftViewController.swift in Sources */,
 				D0363314248020E400AAEE69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

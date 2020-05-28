@@ -21,7 +21,6 @@ extension Instantiatable {
 extension Instantiatable where Self: UIViewController {
     public static func instantiate() -> Self {
         let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
-        // swiftlint:disable:next force_cast
         return storyboard.instantiateViewController(withIdentifier: storyboardName) as! Self
     }
 }

@@ -10,13 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     enum Titles: String, CaseIterable {
-        case helloRxSwift = "HelloRxSwift"
+        case helloRxSwift
+
+        func to() -> UIViewController {
+            switch self {
+            case .helloRxSwift:
+                return HelloRxSwiftViewController.instantiate()
+            }
+        }
     }
 
     @IBOutlet private weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = "Home"
 
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -40,7 +49,10 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
         print("💩 App : \(Titles.allCases[indexPath.row].rawValue) \n")
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let vc = Titles.allCases[indexPath.row].to()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
