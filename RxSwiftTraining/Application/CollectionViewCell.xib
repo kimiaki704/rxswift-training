@@ -14,25 +14,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXl-JT-UAA">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                    <rect key="frame" x="24" y="0.0" width="390" height="75"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYI-3l-UpU">
+                    <rect key="frame" x="0.0" y="74" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="cJA-Mi-9f1"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WXl-JT-UAA" secondAttribute="bottom" id="AcL-wZ-IpV"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WXl-JT-UAA" secondAttribute="trailing" id="B2z-Gc-W9E"/>
-                <constraint firstItem="WXl-JT-UAA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FtL-qz-iG6"/>
+                <constraint firstItem="WXl-JT-UAA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="FtL-qz-iG6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mYI-3l-UpU" secondAttribute="bottom" id="U5G-rf-s3i"/>
                 <constraint firstItem="WXl-JT-UAA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XCB-Qt-ivf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mYI-3l-UpU" secondAttribute="trailing" id="bbE-4N-Ux2"/>
+                <constraint firstItem="mYI-3l-UpU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="epR-eE-bCZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="textLabel" destination="WXl-JT-UAA" id="cDK-wm-qX2"/>
             </connections>
-            <point key="canvasLocation" x="101" y="-164"/>
+            <point key="canvasLocation" x="100.00000000000001" y="-164.39732142857142"/>
         </view>
     </objects>
 </document>

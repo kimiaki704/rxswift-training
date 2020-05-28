@@ -12,6 +12,7 @@ class CollectionViewCell: UICollectionViewCell, NibLoadableView, ReusableView {
     @IBOutlet private var textLabel: UILabel!
 
     public func setup(_ text: String) {
+        contentView.isUserInteractionEnabled = false
         textLabel.text = text
     }
 }
