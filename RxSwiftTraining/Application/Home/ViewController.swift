@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Home"
+        navigationController?.navigationBar.prefersLargeTitles = true
 
         collectionView.delegate = self
         collectionView.dataSource = self

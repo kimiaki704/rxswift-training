@@ -14,13 +14,45 @@
                     <view key="view" contentMode="scaleToFill" id="zrB-9D-EHj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT3-PB-8Qr">
+                                <rect key="frame" x="0.0" y="464" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zWT-uH-aGW"/>
+                                </constraints>
+                                <state key="normal" title="Filter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterButtonTapped:" destination="cO5-hq-Uz6" eventType="touchUpInside" id="vGI-e2-wP9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feR-qb-3aH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="xId-Ep-UdN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="feR-qb-3aH" firstAttribute="top" secondItem="QtS-Yy-ald" secondAttribute="top" id="2Be-Vj-u7c"/>
+                            <constraint firstItem="feR-qb-3aH" firstAttribute="leading" secondItem="QtS-Yy-ald" secondAttribute="leading" id="8r7-Tw-5O3"/>
+                            <constraint firstItem="QtS-Yy-ald" firstAttribute="trailing" secondItem="feR-qb-3aH" secondAttribute="trailing" id="Rfb-6N-mmY"/>
+                            <constraint firstItem="QtS-Yy-ald" firstAttribute="trailing" secondItem="dT3-PB-8Qr" secondAttribute="trailing" id="Rhh-Pm-Eat"/>
+                            <constraint firstItem="dT3-PB-8Qr" firstAttribute="leading" secondItem="QtS-Yy-ald" secondAttribute="leading" id="SWX-Fq-SMA"/>
+                            <constraint firstItem="dT3-PB-8Qr" firstAttribute="top" secondItem="feR-qb-3aH" secondAttribute="bottom" constant="20" id="Sys-k3-arq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QtS-Yy-ald"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="feR-qb-3aH" id="ejk-Es-msG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBH-KA-FoI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="-236"/>
+            <point key="canvasLocation" x="295.6521739130435" y="-236.38392857142856"/>
         </scene>
     </scenes>
 </document>

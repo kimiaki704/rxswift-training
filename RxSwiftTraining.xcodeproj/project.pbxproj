@@ -24,6 +24,8 @@
 		D036333C24802D9200AAEE69 /* HelloRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */; };
 		D03633502482822300AAEE69 /* CameraFilterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D036334F2482822300AAEE69 /* CameraFilterViewController.storyboard */; };
 		D03633522482822C00AAEE69 /* CameraFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03633512482822C00AAEE69 /* CameraFilterViewController.swift */; };
+		D03633542482898400AAEE69 /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03633532482898400AAEE69 /* SelectImageViewController.swift */; };
+		D0363356248289A200AAEE69 /* SelectImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0363355248289A200AAEE69 /* SelectImageViewController.storyboard */; };
 		E0DD6AA677CF3967A0744E1F /* Pods_RxSwiftTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D5A105C03E1689B6E16D6 /* Pods_RxSwiftTraining.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		D036334D24816ED400AAEE69 /* RxSwiftSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftSubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D036334F2482822300AAEE69 /* CameraFilterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraFilterViewController.storyboard; sourceTree = "<group>"; };
 		D03633512482822C00AAEE69 /* CameraFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterViewController.swift; sourceTree = "<group>"; };
+		D03633532482898400AAEE69 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
+		D0363355248289A200AAEE69 /* SelectImageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectImageViewController.storyboard; sourceTree = "<group>"; };
 		FF2D5A105C03E1689B6E16D6 /* Pods_RxSwiftTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +182,8 @@
 			children = (
 				D036334F2482822300AAEE69 /* CameraFilterViewController.storyboard */,
 				D03633512482822C00AAEE69 /* CameraFilterViewController.swift */,
+				D03633532482898400AAEE69 /* SelectImageViewController.swift */,
+				D0363355248289A200AAEE69 /* SelectImageViewController.storyboard */,
 			);
 			path = CameraFilter;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03633502482822300AAEE69 /* CameraFilterViewController.storyboard in Resources */,
+				D0363356248289A200AAEE69 /* SelectImageViewController.storyboard in Resources */,
 				D036331E248020ED00AAEE69 /* LaunchScreen.storyboard in Resources */,
 				D036331B248020ED00AAEE69 /* Assets.xcassets in Resources */,
 				D03633342480293B00AAEE69 /* CollectionViewCell.xib in Resources */,
@@ -308,6 +315,7 @@
 				D036332D248027C400AAEE69 /* ReusableViewExtension.swift in Sources */,
 				D0363332248028F900AAEE69 /* UICollectionViewExtension.swift in Sources */,
 				D0363312248020E400AAEE69 /* AppDelegate.swift in Sources */,
+				D03633542482898400AAEE69 /* SelectImageViewController.swift in Sources */,
 				D03633272480272500AAEE69 /* ViewProtocols.swift in Sources */,
 				D036333C24802D9200AAEE69 /* HelloRxSwiftViewController.swift in Sources */,
 				D0363314248020E400AAEE69 /* SceneDelegate.swift in Sources */,
