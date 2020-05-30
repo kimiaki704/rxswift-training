@@ -11,11 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     enum Titles: String, CaseIterable {
         case helloRxSwift
+        case cameraFilter
 
         func to() -> UIViewController {
             switch self {
             case .helloRxSwift:
                 return HelloRxSwiftViewController.instantiate()
+            case .cameraFilter:
+                return CameraFilterViewController.instantiate()
             }
         }
     }
