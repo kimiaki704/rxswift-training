@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,9 +22,12 @@
 		D03633362480298D00AAEE69 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03633352480298D00AAEE69 /* CollectionViewCell.swift */; };
 		D036333A24802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D036333924802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard */; };
 		D036333C24802D9200AAEE69 /* HelloRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */; };
+		E0DD6AA677CF3967A0744E1F /* Pods_RxSwiftTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D5A105C03E1689B6E16D6 /* Pods_RxSwiftTraining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031479E8B2F1AD2E09BA971B /* Pods-RxSwiftTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTraining.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTraining/Pods-RxSwiftTraining.debug.xcconfig"; sourceTree = "<group>"; };
+		842FCB44D9E42F015EED0FF7 /* Pods-RxSwiftTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTraining.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftTraining/Pods-RxSwiftTraining.release.xcconfig"; sourceTree = "<group>"; };
 		D036330E248020E400AAEE69 /* RxSwiftTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0363311248020E400AAEE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0363313248020E400AAEE69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +45,12 @@
 		D03633352480298D00AAEE69 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D036333924802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelloRxSwiftViewController.storyboard; sourceTree = "<group>"; };
 		D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloRxSwiftViewController.swift; sourceTree = "<group>"; };
-		D036333F2480343100AAEE69 /* RxSwiftPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D036333F2480343100AAEE69 /* RxSwiftSubscribe.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftSubscribe.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D03633412480346F00AAEE69 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		D03633452480347D00AAEE69 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		D03633482480348C00AAEE69 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		D036334D24816ED400AAEE69 /* RxSwiftSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftSubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FF2D5A105C03E1689B6E16D6 /* Pods_RxSwiftTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,18 +58,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DD6AA677CF3967A0744E1F /* Pods_RxSwiftTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57E80C515D049030018C8F65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				031479E8B2F1AD2E09BA971B /* Pods-RxSwiftTraining.debug.xcconfig */,
+				842FCB44D9E42F015EED0FF7 /* Pods-RxSwiftTraining.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D0363305248020E400AAEE69 = {
 			isa = PBXGroup;
 			children = (
 				D0363310248020E400AAEE69 /* RxSwiftTraining */,
 				D036330F248020E400AAEE69 /* Products */,
 				D03633402480346F00AAEE69 /* Frameworks */,
+				57E80C515D049030018C8F65 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,7 +151,8 @@
 			children = (
 				D036333924802D8B00AAEE69 /* HelloRxSwiftViewController.storyboard */,
 				D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */,
-				D036333F2480343100AAEE69 /* RxSwiftPlayground.playground */,
+				D036333F2480343100AAEE69 /* RxSwiftSubscribe.playground */,
+				D036334D24816ED400AAEE69 /* RxSwiftSubject.playground */,
 			);
 			path = HelloRxSwift;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 				D03633482480348C00AAEE69 /* RxRelay.framework */,
 				D03633452480347D00AAEE69 /* RxCocoa.framework */,
 				D03633412480346F00AAEE69 /* RxSwift.framework */,
+				FF2D5A105C03E1689B6E16D6 /* Pods_RxSwiftTraining.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0363322248020ED00AAEE69 /* Build configuration list for PBXNativeTarget "RxSwiftTraining" */;
 			buildPhases = (
+				D6C63549FC2242CBE6BC7DB8 /* [CP] Check Pods Manifest.lock */,
 				D036330A248020E400AAEE69 /* Sources */,
 				D036330B248020E400AAEE69 /* Frameworks */,
 				D036330C248020E400AAEE69 /* Resources */,
+				6B1D51B7BC83FB95ED7DCD1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +237,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B1D51B7BC83FB95ED7DCD1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTraining/Pods-RxSwiftTraining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTraining/Pods-RxSwiftTraining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTraining/Pods-RxSwiftTraining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6C63549FC2242CBE6BC7DB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftTraining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D036330A248020E400AAEE69 /* Sources */ = {
@@ -374,6 +436,7 @@
 		};
 		D0363323248020ED00AAEE69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031479E8B2F1AD2E09BA971B /* Pods-RxSwiftTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -395,6 +458,7 @@
 		};
 		D0363324248020ED00AAEE69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842FCB44D9E42F015EED0FF7 /* Pods-RxSwiftTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
