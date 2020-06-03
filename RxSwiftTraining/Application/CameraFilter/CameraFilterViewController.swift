@@ -24,10 +24,11 @@ final class CameraFilterViewController: UIViewController, Instantiatable {
         let navButton = UIButton()
         navButton.setImage(UIImage(systemName: "plus"), for: .normal)
         navButton.sizeToFit()
+        navButton.tintColor = .systemBlue
         navButton.addTarget(self, action: #selector(rightNavItemButtonTapped(_:)), for: .touchUpInside)
 
         let rightNavItem = UIBarButtonItem(customView: navButton)
-        navigationController?.navigationItem.rightBarButtonItem = rightNavItem
+        navigationItem.rightBarButtonItem = rightNavItem
     }
 
     @objc private func rightNavItemButtonTapped(_ sender: UIButton) {

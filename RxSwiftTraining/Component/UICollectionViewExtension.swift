@@ -21,7 +21,8 @@ extension UICollectionView {
     public func compositionalLayout(itemWidthDimension: NSCollectionLayoutDimension,
                                     itemHeightDimension: NSCollectionLayoutDimension,
                                     groupWidthDimension: NSCollectionLayoutDimension? = nil,
-                                    groupHeightDimension: NSCollectionLayoutDimension? = nil) {
+                                    groupHeightDimension: NSCollectionLayoutDimension? = nil,
+                                    interItemSpacing: NSCollectionLayoutSpacing? = nil) {
         let itemSize = NSCollectionLayoutSize(widthDimension: itemWidthDimension,
                                               heightDimension: itemHeightDimension)
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -34,6 +35,8 @@ extension UICollectionView {
                                                heightDimension: groupHeight)
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                        subitems: [item])
+        
+        group.interItemSpacing = interItemSpacing
 
         let section = NSCollectionLayoutSection(group: group)
         let layout = UICollectionViewCompositionalLayout(section: section)
