@@ -8,9 +8,20 @@
 
 import UIKit
 import CoreImage
+import RxSwift
 
 extension UIImage {
-    func applyFilter(completion: @escaping ((UIImage) -> ())) {
+
+    func applyFilter() -> Observable<UIImage> {
+        return Observable.create { observer in
+            self.applyFilter() { filteredImage in
+                observer.onNext(filteredImage)
+            }
+            return Disposables.create()
+        }
+    }
+
+    private func applyFilter(completion: @escaping ((UIImage) -> ())) {
         let context = CIContext()
         let filter = CIFilter(name: "CICMYKHalftone")
         filter!.setValue(5.0, forKey: kCIInputWidthKey)
