@@ -47,6 +47,7 @@
                         <viewLayoutGuide key="safeArea" id="QtS-Yy-ald"/>
                     </view>
                     <connections>
+                        <outlet property="filterButton" destination="dT3-PB-8Qr" id="EHQ-La-aaG"/>
                         <outlet property="imageView" destination="feR-qb-3aH" id="ejk-Es-msG"/>
                     </connections>
                 </viewController>

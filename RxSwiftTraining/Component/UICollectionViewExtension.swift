@@ -17,7 +17,8 @@ extension UICollectionView {
     public func register<T: UICollectionViewCell>(_: T.Type) where T: NibLoadableView, T: ReusableView {
         register(T.nib, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
-    
+
+    #warning("TODO : この拡張全然対応できてない💩💩💩💩💩💩💩💩💩💩💩💩💩")
     public func compositionalLayout(itemWidthDimension: NSCollectionLayoutDimension,
                                     itemHeightDimension: NSCollectionLayoutDimension,
                                     groupWidthDimension: NSCollectionLayoutDimension? = nil,

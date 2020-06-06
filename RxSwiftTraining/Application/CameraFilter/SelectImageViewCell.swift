@@ -14,7 +14,7 @@ class SelectImageViewCell: UICollectionViewCell, NibLoadableView, ReusableView {
 
     public func setup(_ asset: PHAsset) {
         contentView.isUserInteractionEnabled = false
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         let manager = PHImageManager.default()
         manager.requestImage(for: asset,
                              targetSize: CGSize(width: 100, height: 100),

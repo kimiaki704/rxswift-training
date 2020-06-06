@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import Photos
 
 final class SelectImageViewController: UIViewController, Instantiatable {
     @IBOutlet private weak var collectionView: UICollectionView!
-    
+
+    private let selectedPhotoSubject = PublishSubject<UIImage>()
+    var selectedPhoto: Observable<UIImage> {
+        return selectedPhotoSubject.asObservable()
+    }
+
     private var images: [PHAsset] = []
     
     override func viewDidLoad() {
@@ -69,5 +76,21 @@ extension SelectImageViewController: UICollectionViewDataSource {
 
 extension SelectImageViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("💩 App \(indexPath) \n")
+
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let selectedAsset = images[indexPath.row]
+        PHImageManager.default().requestImage(for: selectedAsset,
+                                              targetSize: CGSize(width: 300, height: 300),
+                                              contentMode: .aspectFit,
+                                              options: nil) { [weak self] image, info in
+                                                guard let self = self, let image = image, let info = info else { return }
+                                                guard let isDegradedImage = info["PHImageResultIsDegradedKey"] as? Bool else { return }
+
+                                                if !isDegradedImage {
+                                                    self.selectedPhotoSubject.onNext(image)
+                                                    self.navigationController?.popViewController(animated: true)
+                                                }
+        }
     }
 }

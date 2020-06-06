@@ -6,10 +6,14 @@
 //  Copyright © 2020 kimioman. All rights reserved.
 //
 
+import RxSwift
 import UIKit
 
 final class CameraFilterViewController: UIViewController, Instantiatable {
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var filterButton: UIButton!
+
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +33,24 @@ final class CameraFilterViewController: UIViewController, Instantiatable {
 
         let rightNavItem = UIBarButtonItem(customView: navButton)
         navigationItem.rightBarButtonItem = rightNavItem
+
+        filterButton.isHidden = true
     }
 
     @objc private func rightNavItemButtonTapped(_ sender: UIButton) {
         let vc = SelectImageViewController.instantiate()
+
+        vc.selectedPhoto.subscribe(onNext: { [weak self] photo in
+            guard let self = self else { return }
+            self.update(with: photo)
+        }).disposed(by: disposeBag)
+        
         navigationController?.pushViewController(vc, animated: true)
+    }
+
+    private func update(with photo: UIImage) {
+        imageView.image = photo
+        filterButton.isHidden = false
     }
 }
 

@@ -58,7 +58,8 @@ Observable.of("A", "B", "C")
     }
     .disposed(by: disposeBag)
 
-Observable<String>.create  { observer in
+let testes = Observable<String>.create  { observer in
+    print("💩 oppai : \(observer) \n")
     observer.onNext("A")
     observer.onCompleted()
     observer.onNext("?")
@@ -69,3 +70,6 @@ Observable<String>.create  { observer in
                onCompleted: { print("💩 complete \n") },
                onDisposed: { print("💩 disposed \n") } )
     .disposed(by: disposeBag)
+
+
+print("💩 unko : \(testes) \n")

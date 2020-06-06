@@ -53,8 +53,6 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("💩 App : \(Titles.allCases[indexPath.row].rawValue) \n")
-        
         collectionView.deselectItem(at: indexPath, animated: true)
         let vc = Titles.allCases[indexPath.row].to()
         navigationController?.pushViewController(vc, animated: true)
