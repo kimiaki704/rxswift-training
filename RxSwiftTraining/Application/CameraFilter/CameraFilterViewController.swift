@@ -57,5 +57,12 @@ final class CameraFilterViewController: UIViewController, Instantiatable {
 // MARK: FilterButtonAction
 
 extension CameraFilterViewController {
-    @IBAction private func filterButtonTapped(_ sender: UIButton) {}
+    @IBAction private func filterButtonTapped(_ sender: UIButton) {
+        guard let image = imageView.image else { return }
+        image.applyFilter() { filteredImage in
+            DispatchQueue.main.async {
+                self.imageView.image = filteredImage
+            }
+        }
+    }
 }
