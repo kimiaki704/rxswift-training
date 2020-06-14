@@ -14,9 +14,43 @@
                     <view key="view" contentMode="scaleToFill" id="DbH-gb-gLo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="L7V-51-aZB">
+                                <rect key="frame" x="69.5" y="84" width="275" height="32"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="High"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Low"/>
+                                </segments>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vlF-vo-yID">
+                                <rect key="frame" x="0.0" y="163" width="414" height="699"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="naA-Vj-Ill">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XqN-li-SL8" firstAttribute="trailing" secondItem="vlF-vo-yID" secondAttribute="trailing" id="PK9-tR-9Gb"/>
+                            <constraint firstItem="L7V-51-aZB" firstAttribute="centerX" secondItem="DbH-gb-gLo" secondAttribute="centerX" id="U9D-cV-amf"/>
+                            <constraint firstItem="vlF-vo-yID" firstAttribute="leading" secondItem="XqN-li-SL8" secondAttribute="leading" id="egd-i6-uQB"/>
+                            <constraint firstItem="vlF-vo-yID" firstAttribute="top" secondItem="L7V-51-aZB" secondAttribute="bottom" constant="48" id="pfn-QN-WmT"/>
+                            <constraint firstItem="L7V-51-aZB" firstAttribute="top" secondItem="XqN-li-SL8" secondAttribute="top" constant="40" id="uC7-gz-41s"/>
+                            <constraint firstItem="XqN-li-SL8" firstAttribute="bottom" secondItem="vlF-vo-yID" secondAttribute="bottom" id="xy5-AT-rpC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XqN-li-SL8"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="vlF-vo-yID" id="9cV-KK-MDn"/>
+                        <outlet property="segmentedControl" destination="L7V-51-aZB" id="quX-rm-svK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyf-4a-lQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
