@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     enum Titles: String, CaseIterable {
         case helloRxSwift
         case cameraFilter
+        case todoList
 
         func to() -> UIViewController {
             switch self {
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
                 return HelloRxSwiftViewController.instantiate()
             case .cameraFilter:
                 return CameraFilterViewController.instantiate()
+            case .todoList:
+                return TodoListViewController.instantiate()
             }
         }
     }
