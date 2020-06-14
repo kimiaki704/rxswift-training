@@ -63,6 +63,7 @@
 		D03633512482822C00AAEE69 /* CameraFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFilterViewController.swift; sourceTree = "<group>"; };
 		D03633532482898400AAEE69 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		D0363355248289A200AAEE69 /* SelectImageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectImageViewController.storyboard; sourceTree = "<group>"; };
+		D063674124960B7900D3A245 /* HelloOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HelloOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D0E73BD0248BC1FF003E5478 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		FF2D5A105C03E1689B6E16D6 /* Pods_RxSwiftTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -169,6 +170,7 @@
 				D036333B24802D9200AAEE69 /* HelloRxSwiftViewController.swift */,
 				D036333F2480343100AAEE69 /* RxSwiftSubscribe.playground */,
 				D036334D24816ED400AAEE69 /* RxSwiftSubject.playground */,
+				D063674124960B7900D3A245 /* HelloOperators.playground */,
 			);
 			path = HelloRxSwift;
 			sourceTree = "<group>";

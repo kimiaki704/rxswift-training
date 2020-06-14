@@ -11,7 +11,6 @@ import CoreImage
 import RxSwift
 
 extension UIImage {
-
     func applyFilter() -> Observable<UIImage> {
         return Observable.create { observer in
             self.applyFilter() { filteredImage in
