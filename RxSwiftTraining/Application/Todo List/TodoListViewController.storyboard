@@ -23,6 +23,9 @@
                                     <segment title="Medium"/>
                                     <segment title="Low"/>
                                 </segments>
+                                <connections>
+                                    <action selector="priorityChanged:" destination="682-6s-98L" eventType="valueChanged" id="M6Y-hB-5S3"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vlF-vo-yID">
                                 <rect key="frame" x="0.0" y="163" width="414" height="699"/>

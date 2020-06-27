@@ -8,4 +8,9 @@
 
 import UIKit
 
-final class TodoListViewCell: UICollectionViewCell, NibLoadableView, ReusableView {}
+final class TodoListViewCell: UICollectionViewCell, NibLoadableView, ReusableView {
+    @IBOutlet private weak var label: UILabel!
+    func setup(_ text: String) {
+        label.text = text
+    }
+}

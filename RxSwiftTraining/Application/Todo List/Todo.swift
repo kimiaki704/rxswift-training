@@ -10,9 +10,9 @@ import Foundation
 
 struct Todo {
     let title: String
-    let type: Type
+    let type: Priority
 
-    enum `Type`: Int {
+    enum Priority: Int {
         case high
         case medium
         case low
@@ -20,6 +20,6 @@ struct Todo {
 
     init(title: String, selectedIndex: Int) {
         self.title = title
-        self.type = Type(rawValue: selectedIndex)! // 現時点でcase以外を許容していない
+        self.type = Priority(rawValue: selectedIndex)! // 現時点でcase以外を許容していない
     }
 }
