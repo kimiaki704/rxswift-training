@@ -33,7 +33,6 @@ final class CameraFilterViewController: UIViewController, Instantiatable {
 
         let rightNavItem = UIBarButtonItem(customView: navButton)
         navigationItem.rightBarButtonItem = rightNavItem
-
         filterButton.isHidden = true
     }
 

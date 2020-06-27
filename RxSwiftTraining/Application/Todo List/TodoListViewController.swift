@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 
 final class TodoListViewController: UIViewController, Instantiatable {
     @IBOutlet private weak var segmentedControl: UISegmentedControl!
     @IBOutlet private weak var collectionView: UICollectionView!
+
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,16 @@ final class TodoListViewController: UIViewController, Instantiatable {
                                            itemHeightDimension: .absolute(50))
     }
 
-    @objc private func rightNavItemButtonTapped(_ sender: UIButton) {}
+    @objc private func rightNavItemButtonTapped(_ sender: UIButton) {
+        let vc = AddTodoViewController.instantiate()
+
+        vc.todoSubjectObservable
+            .subscribe(onNext: { todo in
+                print(todo)
+            }).disposed(by: disposeBag)
+
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension TodoListViewController: UICollectionViewDataSource {
@@ -48,6 +60,4 @@ extension TodoListViewController: UICollectionViewDataSource {
         let cell: TodoListViewCell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TodoListViewCell
         return cell
     }
-
-
 }
